@@ -31,18 +31,18 @@ namespace JoKenPo
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.labelTitulo = new System.Windows.Forms.Label();
-            this.picResultado = new System.Windows.Forms.Label();
+            this.picVoce = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelResultado = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnTesoura = new System.Windows.Forms.Button();
             this.btnPapel = new System.Windows.Forms.Button();
             this.btnPedra = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.picResultado = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picResultado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -57,16 +57,16 @@ namespace JoKenPo
             this.labelTitulo.Text = "Escolha: Pedra, Papel ou Tesoura";
             this.labelTitulo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // picResultado
+            // picVoce
             // 
-            this.picResultado.AutoSize = true;
-            this.picResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.picResultado.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.picResultado.Location = new System.Drawing.Point(66, 149);
-            this.picResultado.Name = "picResultado";
-            this.picResultado.Size = new System.Drawing.Size(62, 25);
-            this.picResultado.TabIndex = 4;
-            this.picResultado.Text = "você";
+            this.picVoce.AutoSize = true;
+            this.picVoce.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.picVoce.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.picVoce.Location = new System.Drawing.Point(66, 149);
+            this.picVoce.Name = "picVoce";
+            this.picVoce.Size = new System.Drawing.Size(62, 25);
+            this.picVoce.TabIndex = 4;
+            this.picVoce.Text = "você";
             // 
             // label1
             // 
@@ -79,16 +79,16 @@ namespace JoKenPo
             this.label1.TabIndex = 5;
             this.label1.Text = "PC";
             // 
-            // label2
+            // labelResultado
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label2.Location = new System.Drawing.Point(529, 149);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(25, 25);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "?";
+            this.labelResultado.AutoSize = true;
+            this.labelResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelResultado.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.labelResultado.Location = new System.Drawing.Point(529, 149);
+            this.labelResultado.Name = "labelResultado";
+            this.labelResultado.Size = new System.Drawing.Size(25, 25);
+            this.labelResultado.TabIndex = 6;
+            this.labelResultado.Text = "?";
             // 
             // label3
             // 
@@ -145,16 +145,18 @@ namespace JoKenPo
             this.btnPedra.UseVisualStyleBackColor = true;
             this.btnPedra.Click += new System.EventHandler(this.btnPedra_Click);
             // 
-            // pictureBox3
+            // picResultado
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(464, 89);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(150, 150);
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
+            this.picResultado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picResultado.Location = new System.Drawing.Point(464, 89);
+            this.picResultado.Name = "picResultado";
+            this.picResultado.Size = new System.Drawing.Size(150, 150);
+            this.picResultado.TabIndex = 3;
+            this.picResultado.TabStop = false;
             // 
             // pictureBox2
             // 
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox2.Location = new System.Drawing.Point(242, 89);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(150, 150);
@@ -163,6 +165,7 @@ namespace JoKenPo
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(20, 89);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 150);
@@ -179,17 +182,17 @@ namespace JoKenPo
             this.Controls.Add(this.btnPedra);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelResultado);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.picVoce);
             this.Controls.Add(this.picResultado);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelTitulo);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.Text = "JoKenPo";
+            ((System.ComponentModel.ISupportInitialize)(this.picResultado)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -202,10 +205,10 @@ namespace JoKenPo
         private System.Windows.Forms.Label labelTitulo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label picResultado;
+        private System.Windows.Forms.PictureBox picResultado;
+        private System.Windows.Forms.Label picVoce;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelResultado;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnPedra;
