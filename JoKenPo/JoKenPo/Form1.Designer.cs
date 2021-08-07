@@ -121,6 +121,7 @@ namespace JoKenPo
             this.btnTesoura.Size = new System.Drawing.Size(150, 142);
             this.btnTesoura.TabIndex = 11;
             this.btnTesoura.UseVisualStyleBackColor = true;
+            this.btnTesoura.Click += new System.EventHandler(this.btnTesoura_Click);
             // 
             // btnPapel
             // 
@@ -131,6 +132,7 @@ namespace JoKenPo
             this.btnPapel.Size = new System.Drawing.Size(150, 142);
             this.btnPapel.TabIndex = 10;
             this.btnPapel.UseVisualStyleBackColor = true;
+            this.btnPapel.Click += new System.EventHandler(this.btnPapel_Click);
             // 
             // btnPedra
             // 
@@ -141,6 +143,7 @@ namespace JoKenPo
             this.btnPedra.Size = new System.Drawing.Size(150, 142);
             this.btnPedra.TabIndex = 9;
             this.btnPedra.UseVisualStyleBackColor = true;
+            this.btnPedra.Click += new System.EventHandler(this.btnPedra_Click);
             // 
             // pictureBox3
             // 
